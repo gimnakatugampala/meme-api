@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.79.0" />
+    <title>Meme Generator | Gimna Katugampala Production</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <div class="container">
+        <span class="navbar-brand">Meme Generator</span>
+      </div>
+    </nav>
+
+    <!--SEarch Container-->
+    <div id="search-container" class="container">
+      <div id="search" class="card card-body bg-light mb-2">
+        <h4 class="mx-auto">Select Meme Limit</h4>
+        <form id="search-form">
+          <h5 class="mt-2">Limit:</h5>
+          <div class="form-group">
+            <select name="limit" id="limit" class="form-control">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50" selected>50</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+          <div class="row">
+            <button type="submit" class="btn btn-dark col text-center mt-4">
+              Generate Memes
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="results">
+        <!-- <div class="card meme col-sm-12">
+          <img src="https://i.redd.it/9bnr0t528sa61.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card meme col-sm-12">
+          <img src="https://i.redd.it/9bnr0t528sa61.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card meme col-sm-12">
+          <img src="https://i.redd.it/9bnr0t528sa61.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card meme col-sm-12">
+          <img src="https://i.redd.it/9bnr0t528sa61.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- <footer class="container-fluid">
+      <p>Gimna Katugampala Production</p>
+    </footer> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".navbar-brand", {
+        duration: 2000,
+        origin: "bottom",
+      });
+
+      window.sr = ScrollReveal();
+      sr.reveal(".card", {
+        duration: 2000,
+        origin: "top",
+        distance: "300px",
+        viewFactor: 0.2,
+      });
+
+      window.sr = ScrollReveal();
+      sr.reveal(".meme .card-title", {
+        duration: 2000,
+        origin: "top",
+      });
+    </script>
+  </body>
+</html>
